@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Equipos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/torneo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu">
+                <a href="#popup" class="menu-button">Mis campeonatos</a>
+                <a href="#equiposPopup" class="menu-button">Registro de equipos</a>
+                <a href="#eliminatoriasPopup" class="menu-button">Eliminatorias</a>
+                <a href="#arbitrosPopup" class="menu-button">Árbitros</a>               
+                <a href="#clasificacionPopup" class="menu-button">Tabla de clasificación</a>
+                <a href="#jugadoresPopup" class="menu-button">Jugadores Destacados</a>
+                <a href="#resultadosPopup" class="menu-button">Resultados</a>
+            </div>
+            <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <h2>Torneo InterTalleres Kinal</h2>
+            <img src="../Images/kinaltrn.png" style="max-width: 100%; height: auto; border-radius: 10px; margin-top: 10px;">
+            <p>¡Has creado el torneo InterTalleres de Kinal! Aquí podrás encontrar todos los detalles.</p>
+            <a href="#" class="menu-button">Cerrar</a>
+        </div>
+    </div>
+        </div>
+        <div class="image-container">
+            <video controls autoplay loop muted>
+                <source src="../images/FIFA18 ..mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Ventana de la lista de los  equipos -->
+    <div id="equiposPopup" class="popup-container">
+        <div class="popup-content">
+            <h2>Registro de Equipos</h2>
+            <div class="equipos-group">
+                <div class="equipo">
+                    <span>ME5BM – Mecánica 5to B Matutina</span>
+                    <div class="color-circle" style="background-color: #029b1c;"></div>
+                    <div class="logo-space"><img src="../images/arsenal.jpg" alt="Arsenal Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>IN4AM – Informática 4to A Matutina</span>
+                    <div class="color-circle" style="background-color: #8d1306;"></div>
+                    <div class="logo-space"><img src="../images/bayern.jpg" alt="Bayern Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>EL6BM – Electrónica 6to B Matutina</span>
+                    <div class="color-circle" style="background-color: #03158a;"></div>
+                    <div class="logo-space"><img src="../images/chelsea.jpg" alt="Chelsea Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>IN6AM – Informática 6to A Matutina</span>
+                    <div class="color-circle" style="background-color: #102fdb;"></div>
+                    <div class="logo-space"><img src="../images/brighton.jpg" alt="Brighton Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>EL5AM – Electrónica 5to A Matutina</span>
+                    <div class="color-circle" style="background-color: #4ab1e8;"></div>
+                    <div class="logo-space"><img src="../images/city.jpg" alt="City Logo" class="logo-img"></div>
+                </div>
+            </div>
+            <div class="equipos-group">
+                <div class="equipo">
+                    <span>ME4AM – Mecánica 4to A Matutina</span>
+                    <div class="color-circle" style="background-color: #c70d22;"></div>
+                    <div class="logo-space"><img src="../images/fulham.jpg" alt="Fulham Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>IN5BM – Informática 5to B Matutina</span>
+                    <div class="color-circle" style="background-color: #4a4a49;"></div>
+                    <div class="logo-space"><img src="../images/juventus.jpg" alt="Juventus Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>EL4BM – Electrónica 4to B Matutina</span>
+                    <div class="color-circle" style="background-color: #ef1409;"></div>
+                    <div class="logo-space"><img src="../images/liverpool.jpg" alt="Liverpool Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>ME6AM – Mecánica 6to A Matutina</span>
+                    <div class="color-circle" style="background-color: #feffff;"></div>
+                    <div class="logo-space"><img src="../images/madrid.jpg" alt="Madrid Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>IN6BM – Informática 6to B Matutina</span>
+                    <div class="color-circle" style="background-color: #ffffff;"></div>
+                    <div class="logo-space"><img src="../images/tottenham.jpg" alt="Tottenham Logo" class="logo-img"></div>
+                </div>
+            </div>
+            <div class="equipos-group">
+                <div class="equipo">
+                    <span>EL5BM – Electrónica 5to B Matutina</span>
+                    <div class="color-circle" style="background-color: #0a459f;"></div>
+                    <div class="logo-space"><img src="../images/united.jpg" alt="United Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>ME4BM – Mecánica 4to B Matutina</span>
+                    <div class="color-circle" style="background-color: #010100;"></div>
+                    <div class="logo-space"><img src="../images/wolverhampton.jpg" alt="Wolverhampton Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>IN5AM – Informática 5to A Matutina</span>
+                    <div class="color-circle" style="background-color: #eaf331;"></div>
+                    <div class="logo-space"><img src="../images/astonvilla.jpg" alt="Aston Villa Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>EL4AM – Electrónica 4to A Matutina</span>
+                    <div class="color-circle" style="background-color: #dd3636;"></div>
+                    <div class="logo-space"><img src="../images/barcelona.jpg" alt="Barcelona Logo" class="logo-img"></div>
+                </div>
+                <div class="equipo">
+                    <span>ME6BM – Mecánica 6to B Matutina</span>
+                    <div class="color-circle" style="background-color: #45ace3;"></div>
+                    <div class="logo-space"><img src="../images/crystalpalace.jpg" alt="Logo" class="logo-img"></div>
+                </div>
+            </div>
+            <a href="#" class="menu-button">Cerrar</a>
+        </div>
+    </div>
+<div id="eliminatoriasPopup" class="popup-container">
+        <div class="popup-content">
+            <h2>Eliminatorias</h2>
+            <div class="bracket">
+                <div class="round">
+                    <h3>Semifinales</h3>
+                    <div class="match">
+                        <div class="team">ME5BM</div>
+                        <div class="vs">vs</div>
+                        <div class="team">IN4AM</div>
+                    </div>
+                    <div class="match">
+                        <div class="team">EL6BM</div>
+                        <div class="vs">vs</div>
+                        <div class="team">IN5BM</div>
+                    </div>
+                </div>
+                <div class="round">
+                    <h3>Final</h3>
+                    <div class="match">
+                        <div class="team">Ganador SF1</div>
+                        <div class="vs">vs</div>
+                        <div class="team">Ganador SF2</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="menu-button">Cerrar</a>
+        </div>
+    </div>
+<div id="arbitrosPopup" class="popup-container">
+        <div class="popup-content">
+            <h2>Árbitros</h2>
+            <div class="arbitros-list">
+                <div class="arbitro">1. Eduardo Hor</div>
+                <div class="arbitro">2. Cesar Palacios</div>
+                <div class="arbitro">3. Norman Monroy</div>
+                <div class="arbitro">4. Julio Torres</div>
+                <div class="arbitro">5. Alvaro Calderón</div>
+                <div class="arbitro">6. Mynor Delgado</div>
+                <div class="arbitro">7. Marco Tulio</div>
+                <div class="arbitro">8. Juan Rivas</div>
+            </div>
+            <a href="#" class="menu-button">Cerrar</a>
+        </div>
+    </div>
+        <div id="clasificacionPopup" class="popup-container">
+        <div class="popup-content">
+            <h2>Tabla de Clasificación</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Team</th>
+                            <th>P</th>
+                            <th>W</th>
+                            <th>L</th>
+                            <th>D</th>
+                            <th>GD</th>
+                            <th>PTS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>IN5BM</td>
+                            <td>19</td>
+                            <td>18</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>48</td>
+                            <td>54</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>EL6BM</td>
+                            <td>18</td>
+                            <td>15</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>37</td>
+                            <td>48</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ME5BM</td>
+                            <td>18</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>26</td>
+                            <td>36</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>IN5AM</td>
+                            <td>18</td>
+                            <td>10</td>
+                            <td>7</td>
+                            <td>1</td>
+                            <td>20</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ME4BM</td>
+                            <td>19</td>
+                            <td>9</td>
+                            <td>7</td>
+                            <td>3</td>
+                            <td>24</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>IN6BM</td>
+                            <td>17</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>EL4BM</td>
+                            <td>18</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>2</td>
+                            <td>11</td>
+                            <td>23</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="#" class="menu-button">Cerrar</a>
+        </div>
+    </div>
+        <div id="jugadoresPopup" class="popup-container">
+        <div class="popup-content">
+            <h2>Jugadores Destacados</h2>
+            <div class="jugadores-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Asistencias</th>
+                            <th>Goles</th>
+                            <th>Resistencia</th>
+                            <th>Velocidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jeremy Mendez</td>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Hugo Samayoa</td>
+                            <td>10</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Diego Leiva</td>
+                            <td>8</td>
+                            <td>18</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Diego Muñoz</td>
+                            <td>15</td>
+                            <td>12</td>
+                            <td>9</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Lopez</td>
+                            <td>7</td>
+                            <td>14</td>
+                            <td>8</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Alejandro Vargas</td>
+                            <td>11</td>
+                            <td>16</td>
+                            <td>7</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Mateo Rodríguez</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>8</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Daniel Pacheco</td>
+                            <td>14</td>
+                            <td>13</td>
+                            <td>9</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Luis Fernández</td>
+                            <td>6</td>
+                            <td>11</td>
+                            <td>7</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Sergio Morales</td>
+                            <td>13</td>
+                            <td>15</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="#" class="menu-button">Cerrar</a>
+        </div>
+    </div>
+        <div id="resultadosPopup" class="popup-container">
+        <div class="popup-content">
+            <h2>Resultados</h2>
+            <div class="result-container">
+                <h3>Liga Final</h3>
+                <div class="trophy">🏆</div>
+                <p class="winner">¡IN5BM es el campeón!</p>
+                <p>Felicidades a IN5BM por su victoria en la liga.</p>
+            </div>
+            <a href="#" class="menu-button">Cerrar</a>
+        </div>
+    </div>
+</body>
+</html>

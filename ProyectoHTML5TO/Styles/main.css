@@ -1,0 +1,76 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Images/22432.jpg') center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.contenedor {
+    text-align: center;
+    background-color: rgba(10, 25, 45, 0.7);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contenedor h1 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contenedor p {
+    color: #E0E0E0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    width: 12em;
+    height: 3em;
+    margin: 0.5em;
+    background: #00A86B;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0.5em 1em;
+    line-height: 3em;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #003366;
+}
+
+.btn::after {
+    content: "";
+    background: #149CEA;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: transform 0.5s;
+}
+
+.btn:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+}
