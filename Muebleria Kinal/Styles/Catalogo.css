@@ -1,0 +1,231 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+
+        /* Conetenido Principal */
+        .catalogo-header {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 4rem 0 2rem;
+            text-align: center;
+        }
+
+        .catalogo-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .catalogo-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Seccion de Filtros */
+        .filtros {
+            background: white;
+            padding: 2rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .filtros-botones {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-filtros {
+            padding: 10px 20px;
+            border: 2px solid #e74c3c;
+            background: white;
+            color: #e74c3c;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-filtros:hover,
+        .btn-filtros.active {
+            background: #e74c3c;
+            color: white;
+        }
+
+        /* Productos */
+        .productos {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .productos-cuadro {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .productos-tarjeta {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .productos-tarjeta:hover {
+            transform: translateY(-10px);
+        }
+
+        .imagen-producto{
+            height: 250px;
+            background: linear-gradient(45deg, #e8e8e8, #f4f4f4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #bbb;
+        }
+
+        .image {
+            height: 190px;
+        }
+
+        .producto-info {
+            padding: 1.5rem;
+        }
+
+        .producto-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .producto-descripcion {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .producto-pricio {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .producto-med {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .contacto-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contacto-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+        }
+
+        /* Pie de Pagina */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .inicio {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 10px 30px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .inicio:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        /* Responsiva */
+        @media (max-width: 768px) {
+            .catalogo-header h1 {
+                font-size: 2rem;
+            }
+            
+            .filtros-botones {
+                justify-content: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
