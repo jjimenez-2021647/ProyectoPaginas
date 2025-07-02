@@ -1,0 +1,20 @@
+/* components.css */
+.card-product { position: relative; }
+.badge-overlay {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.badge-image { max-width: 50px; height: auto; }
+.custom-slider { position: relative; overflow: hidden; width: 100%; }
+.custom-slides { position: relative; width: 100%; }
+.slider-controls { display: flex; justify-content: center; align-items: center; }
+.slider-dot { width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255,255,255,0.5); }
+.slider-dot.active { background-color: white; }

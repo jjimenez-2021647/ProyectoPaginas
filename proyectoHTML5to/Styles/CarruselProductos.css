@@ -1,0 +1,50 @@
+/* Carrusel de productos solo con CSS */
+.carrusel-productos {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carrusel-productos input[type="radio"] {
+  display: none;
+}
+.carrusel-productos .slides {
+  display: flex;
+  width: 500%; /* 5 slides */
+  transition: transform 0.5s;
+}
+.carrusel-productos .slide {
+  width: 20%;
+  flex-shrink: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0; top: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+#prod1:checked ~ .slides .slide1,
+#prod2:checked ~ .slides .slide2,
+#prod3:checked ~ .slides .slide3,
+#prod4:checked ~ .slides .slide4,
+#prod5:checked ~ .slides .slide5 {
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+}
+.carrusel-productos .nav-dots {
+  position: absolute;
+  bottom: 10px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 10px;
+}
+.carrusel-productos .nav-dots label {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; opacity: 0.5; cursor: pointer;
+  display: inline-block;
+}
+#prod1:checked ~ .nav-dots label[for="prod1"],
+#prod2:checked ~ .nav-dots label[for="prod2"],
+#prod3:checked ~ .nav-dots label[for="prod3"],
+#prod4:checked ~ .nav-dots label[for="prod4"],
+#prod5:checked ~ .nav-dots label[for="prod5"] {
+  opacity: 1;
+  background: #ff5e14;
+}

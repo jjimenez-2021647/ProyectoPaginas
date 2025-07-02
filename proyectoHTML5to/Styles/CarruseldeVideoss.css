@@ -1,0 +1,34 @@
+/* Carrusel de videos solo con CSS */
+.carrusel-videos {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.carrusel-videos .video-item {
+  flex: 0 0 80vw;
+  scroll-snap-align: start;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+.carrusel-videos-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.carrusel-videos-nav label {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; opacity: 0.5; cursor: pointer;
+  display: inline-block;
+}
+input[name="video-carrusel"]:checked + label {
+  opacity: 1;
+  background: #ff5e14;
+}
+@media (max-width: 768px) {
+  .carrusel-videos .video-item { flex: 0 0 95vw; }
+}

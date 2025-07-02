@@ -1,0 +1,88 @@
+<!-- FotosAmbientadasSection -->
+    <div class="rowfa" style="margin: 60px auto 0; padding:0; border:none; color:inherit; text-decoration:none;">
+    <div class="tm-1-general-container">
+        <input class="tm-1-radio" type="radio" name="tm-1-card" id="tm-1-cardUno" checked="">
+        <label class="tm-1-content" for="tm-1-cardUno">
+        <h1 class="tm-1-title-card">
+            <span class="tm-1-marg-bott"></span>
+            <span class="tm-1-subtitle"></span>
+        </h1>
+        <h3 class="tm-1-card-title tm-1-subsubtitle">
+            <span></span>
+        </h3>
+        </label>
+
+        <input class="tm-1-radio" type="radio" name="tm-1-card" id="tm-1-cardDos">
+        <label class="tm-1-content" for="tm-1-cardDos">
+        <h1 class="tm-1-title-card">
+            <span class="tm-1-marg-bott"></span>
+            <span class="tm-1-subtitle"></span>
+        </h1>
+        <h3 class="tm-1-card-title tm-1-subsubtitle">
+            <span></span>
+        </h3>
+        </label>
+
+        <input class="tm-1-radio" type="radio" name="tm-1-card" id="tm-1-cardTres">
+        <label class="tm-1-content" for="tm-1-cardTres">
+        <h1 class="tm-1-title-card">
+            <span class="tm-1-marg-bott"></span>
+            <span class="tm-1-subtitle"></span>
+        </h1>
+        <h3 class="tm-1-card-title tm-1-subsubtitle">
+            <span></span>
+        </h3>
+        </label>
+
+        <input class="tm-1-radio" type="radio" name="tm-1-card" id="tm-1-cardCuatro">
+        <label class="tm-1-content" for="tm-1-cardCuatro">
+        <h1 class="tm-1-title-card">
+            <span class="tm-1-marg-bott"></span>
+            <span class="tm-1-subtitle"></span>
+        </h1>
+        <h3 class="tm-1-card-title tm-1-subsubtitle">
+            <span></span>
+        </h3>
+        </label>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productUrls = [
+            "https://www.xtremepc.com.mx/products/xtreme-pc-gaming-msi-geforce-rtx-5090-intel-core-i9-14900kf-64gb-ddr5-ssd-2tb-sistema-liquido-wifi?_pos=1&_sid=5bdf0794c&_ss=r",
+            "https://www.xtremepc.com.mx/products/kit-gamer-2-en-1-xtreme-pc-gaming-battle-chief-teclado-y-mouse-membrana-espanol-3600-dpi-rgb-usb-blanco?_pos=1&_sid=5d6eea00f&_ss=r",
+            "https://www.xtremepc.com.mx/products/pc-gamer-dxtgaming-geforce-rtx-5070-ti-amd-ryzen-9-9900x-64gb-ddr5-ssd-2tb-sistema-liquido-wifi-silver?_pos=6&_sid=b2e666e47&_ss=r",
+            "https://www.xtremepc.com.mx/products/enfriamiento-liquido-xtreme-pc-gaming-aqua-force-lcxtaq120bk-120mm-argb-800-2200-rpm-negro?_pos=1&_sid=4ad795071&_ss=r"
+            ];
+
+            let activeCardIndex = 0; // Inicialmente la primera card está activa
+            let clickCount = 0;
+
+            document.querySelectorAll('.tm-1-content').forEach((label, index) => {
+            label.addEventListener('click', (e) => {
+                // Si la card ya está activa y es el segundo clic, redirige
+                if (index === activeCardIndex) {
+                clickCount++;
+                if (clickCount === 1) {
+                    window.location.href = productUrls[index];
+                }
+                } else {
+                // Si es otra card, reinicia el contador
+                clickCount = 0;
+                activeCardIndex = index;
+                }
+
+                // Resetear el contador después de un tiempo (ej. 1 segundo)
+                setTimeout(() => {
+                clickCount = 0;
+                }, 1000);
+            });
+
+            // Cambiar cursor solo cuando la card está activa
+            const radio = document.getElementById(`tm-1-card${index === 0 ? 'Uno' : index === 1 ? 'Dos' : index === 2 ? 'Tres' : 'Cuatro'}`);
+            radio.addEventListener('change', () => {
+                label.style.cursor = radio.checked ? 'pointer' : 'default';
+            });
+            });
+        });
+        </script>
+    </div>
+    </div>

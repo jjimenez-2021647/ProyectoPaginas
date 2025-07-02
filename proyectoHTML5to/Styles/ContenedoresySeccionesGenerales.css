@@ -1,0 +1,33 @@
+.custom-container1 {
+  width: 100%;
+  margin: auto;
+  color: white;
+  background: none;
+}
+.featured, .featured2 {
+  background: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.featured img, .featured2 img {
+  width: 100%;
+  object-fit: cover;
+}
+.featured2 img { padding: 2px 4px; }
+.btn-personalizar {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.special{
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
