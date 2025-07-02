@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 50px;
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-5px);
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    /* los <li> en fila */
+    gap: 20px;
+    /*  espacio entre ellos */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.conocenos {
+    background-color: transparent;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px dashed transparent;
+    box-shadow: transparent 0px 2px 5px -1px, transparent 0px 1px 3px -1px;
+    transition: 0.4s;
+}
+
+.conocenos span:last-child {
+    display: none;
+}
+
+.conocenos:hover {
+    transition: 0.4s;
+    border: 3px dashed #51c0f3;
+    background-color: #fff;
+    color: #00adfd;
+}
+
+.conocenos:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-10px);
+    background: transparent;
+    color: white;
+}
+
+
+.viajes {
+    background-color: transparent;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px dashed transparent;
+    box-shadow: transparent 0px 2px 5px -1px, transparent 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.viajes span:last-child {
+    display: none;
+}
+
+.viajes:hover {
+    transition: .4s;
+    border: 3px dashed #51c0f3;
+    background-color: #fff;
+    color: #00adfd;
+}
+
+.viajes:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-10px);
+    background: transparent;
+    color: white;
+}
+
+.hoteles {
+    background-color: transparent;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px dashed transparent;
+    box-shadow: transparent 0px 2px 5px -1px, transparent 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.hoteles span:last-child {
+    display: none;
+}
+
+.hoteles:hover {
+    transition: .4s;
+    border: 3px dashed #51c0f3;
+    background-color: #fff;
+    color: #00adfd;
+}
+
+.hoteles:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-10px);
+    background: transparent;
+    color: white;
+}
+/*fondo con el video*/
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #156275;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 5em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    position: relative;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+
+.menu ul li a:hover {
+    color: #03a9f4;
+}
+
+@media (max-width: 991px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}
+
+
+/*Botos redes sociales*/
+.card {
+    
+    display: flex;
+    height: 70px;
+    width: 270px;
+
+    position: absolute;
+    z-index: 10;
+    bottom: 50px;
+}
+
+.card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.card svg {
+    transform: scale(1);
+}
+
+.card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+    background-color: #0144aa;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 20px;
+    }
+
+    header .logo {
+        font-size: 30px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inicio,
+    .destinos,
+    .viajes,
+    .hoteles {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 5px;
+    }
+}

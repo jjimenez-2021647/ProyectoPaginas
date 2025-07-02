@@ -1,0 +1,435 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 50px;
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-5px);
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+
+.container {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.inicio,
+.conocenos,
+.viajes,
+.hoteles {
+    background-color: transparent;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px dashed transparent;
+    box-shadow: transparent 0px 2px 5px -1px, transparent 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.inicio span:last-child,
+.conocenos span:last-child,
+.viajes span:last-child,
+.hoteles span:last-child {
+    display: none;
+}
+
+.inicio:hover,
+.conocenos:hover,
+.viajes:hover,
+.hoteles:hover {
+    transition: .4s;
+    border: 3px dashed #c09340c5;
+    background-color: #fff;
+    color: #b8821fa1;
+}
+
+.inicio:active,
+.destinos:active,
+.viajes:active,
+.hoteles:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-10px);
+    background: transparent;
+    color: white;
+}
+
+
+
+
+/* El fondo igual que el video del index*/
+body {
+    background: black;
+    min-height: 100vh;
+}
+
+.showcase {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.5s;
+    z-index: 2;
+
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+
+/* los ajustesd de la imagen*/
+.showcase img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+
+/*Contendor pricipal dentro van los hoteles*/
+.hoteles-contenedor {
+    padding: 120px 50px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+}
+/*Titulo del contenedor principal*/
+.titulo-seccion {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/*Seccion donde estan todos los hoteles*/
+.viajes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+/*Div de hotel*/
+.viaje-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+}
+
+.viaje-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+    display: flex;
+    height: 260px;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card-image-container {
+    width: 300px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    /*Cantidad de porcentanje dependiendo la cantidad de imagens 100**/
+    width: 500%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-slide {
+    width: 20%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+/* Controles del carrusel */
+/*pa sacar el porcentajes es depende de las imagenes es 100/n imagenes*/
+.card-image-container input[type="radio"]:nth-child(1):checked~.carousel-images {
+    transform: translateX(0%);
+}
+
+.card-image-container input[type="radio"]:nth-child(2):checked~.carousel-images {
+    transform: translateX(-20%);
+}
+
+.card-image-container input[type="radio"]:nth-child(3):checked~.carousel-images {
+    transform: translateX(-40%);
+}
+
+.card-image-container input[type="radio"]:nth-child(4):checked~.carousel-images {
+    transform: translateX(-60%);
+}
+
+.card-image-container input[type="radio"]:nth-child(5):checked~.carousel-images {
+    transform: translateX(-80%);
+}
+
+.card-image-container input[type="radio"] {
+    display: none;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+/*Los puuntos para mover la imagen*/
+.nav-dot {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-dot:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+}
+
+
+.card-info {
+    flex: 1;
+    padding: 25px;
+    width: auto;
+    display: table-column-group;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.viaje-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.viaje-location {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.viaje-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+/*Letra de los tag de arriba del raiting*/
+.feature-tag {
+    background: #e8f5e8;
+    color: #27ae60;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+/*ejemplo el me queda 1.hab*/
+.availability-tag {
+    background: #d4edda;
+    color: #155724;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/*div de puntuacion del hospedaje*/
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+/*El raiting*/
+.rating-score {
+    background: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.rating-text {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.rating-count {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
+
+/*Div de precios*/
+.pricing {
+    text-align: right;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-self: flex-end;
+}
+/*Precio pequeño arriba del grande*/
+.price-per-night {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+/*Precio grande*/
+.price-current {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/*Precio total abajo del grande*/
+.price-total {
+    position: relative;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
+/*Info abajo del precio total*/
+.total-info {
+    position: relative;
+    color: #7f8c8d;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* pa que sea responsivo*/
+@media (max-width: 768px) {
+    .viajes-container {
+        padding: 120px 20px 50px;
+    }
+
+    .card-content {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .card-image-container {
+        width: 100%;
+        height: 200px;
+    }
+
+    .carousel-images {
+        width: 500%;
+    }
+
+    .image-slide {
+        width: 20%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+}

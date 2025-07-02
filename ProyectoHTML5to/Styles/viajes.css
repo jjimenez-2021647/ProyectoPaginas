@@ -1,0 +1,1046 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 50px;
+    text-decoration: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-5px);
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.inicio,
+.conocenos,
+.viajes,
+.hoteles {
+    background-color: transparent;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px dashed transparent;
+    box-shadow: transparent 0px 2px 5px -1px, transparent 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.inicio span:last-child,
+.conocenos span:last-child,
+.viajes span:last-child,
+.hoteles span:last-child {
+    display: none;
+}
+
+.inicio:hover,
+.conocenos:hover,
+.viajes:hover,
+.hoteles:hover {
+    transition: .4s;
+    border: 3px dashed #c09340c5;
+    background-color: #fff;
+    color: #b8821fa1;
+}
+
+.inicio:active,
+.destinos:active,
+.viajes:active,
+.hoteles:active {
+    letter-spacing: 0.4px;
+    transition: 0.1s all;
+    transform: translateY(-10px);
+    background: transparent;
+    color: white;
+}
+
+.h
+
+/* Estilos para el showcase - IGUAL QUE CON EL VIDEO */
+body {
+    background: black;
+    min-height: 100vh;
+}
+
+.showcase {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.5s;
+    z-index: 2;
+
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+/* imagen de fondo */
+.showcase img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+.contenido-principal {
+    padding: 120px 50px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.contenedor-principal {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.titulo-principal {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.subtitulo-principal {
+    color: #718096;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/*forms de busqueda arriba de tarjeta*/
+.forms-busqueda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: 2rem;
+}
+
+.forms-opciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-titulo {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+/*Donde ingresamos los textos*/
+.entrada-forms {
+    padding: 1rem;
+    border: 2px solid #98d6fa;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.entrada-forms:focus {
+    outline: none;
+    border-color: #0051ff;
+    box-shadow: 0 0 0 3px rgba(0, 4, 255, 0.267);
+}
+
+input[type="date"] {
+    padding: 1rem;
+    border: 2px solid #98d6fa;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #ffffff;
+}
+
+
+.opcion-viajes {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.opcion-viaje {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+}
+
+.opcion-viaje input[type="radio"] {
+    accent-color: #002fff;
+}
+
+/*Boton Buscar*/
+
+.btn-buscar {
+    --primary: #ffffff;
+    --neutral-1: #5dc3eb;
+    --neutral-2: #0e8ec0;
+    --radius: 14px;
+    cursor: pointer;
+    border-radius: var(--radius);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    border: none;
+    box-shadow: 0 0.5px 0.5px 1px rgba(255, 255, 255, 0.2),
+        0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 5px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    padding: 20px;
+    height: 68px;
+    font-family: "Galano Grotesque", Poppins, Montserrat, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-buscar:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 15px 30px rgba(0, 0, 0, 0.3), 0 10px 3px -3px rgba(0, 0, 0, 0.04);
+}
+
+.btn-buscar:active {
+    transform: scale(1);
+    box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.3),
+        0 10px 3px -3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-buscar:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+    border: 2.5px solid transparent;
+    background: linear-gradient(var(--neutral-1), var(--neutral-2)) padding-box,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.45)) border-box;
+    z-index: 0;
+    transition: all 0.4s ease;
+}
+
+.btn-buscar:hover::after {
+    transform: scale(1.05, 1.1);
+    box-shadow: inset 0 -1px 3px 0 rgba(255, 255, 255, 1);
+}
+
+.btn-buscar::before {
+    content: "";
+    inset: 7px 6px 6px 6px;
+    position: absolute;
+    background: linear-gradient(to top, var(--neutral-1), var(--neutral-2));
+    border-radius: 30px;
+    filter: blur(0.5px);
+    z-index: 2;
+}
+
+.state p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.state .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(1.25);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.state .icon svg {
+    overflow: visible;
+}
+
+/* Outline */
+.outline {
+    position: absolute;
+    border-radius: inherit;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    inset: -2px -3.5px;
+}
+
+.outline::before {
+    content: "";
+    position: absolute;
+    inset: -100%;
+    background: conic-gradient(from 180deg,
+            transparent 60%,
+            rgb(255, 251, 251) 80%,
+            transparent 100%);
+    animation: spin 2s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-buscar:hover .outline {
+    opacity: 1;
+}
+
+.btn-buscar:hover .outline::before {
+    animation-play-state: running;
+}
+
+/* Letters */
+.state p span {
+    display: block;
+    opacity: 0;
+    animation: slideDown 0.8s ease forwards calc(var(--i) * 0.03s);
+}
+
+.btn-buscar:hover p span {
+    opacity: 1;
+    animation: wave 0.5s ease forwards calc(var(--i) * 0.02s);
+}
+
+.btn-buscar:focus p span {
+    opacity: 1;
+    animation: disapear 0.6s ease forwards calc(var(--i) * 0.03s);
+}
+
+@keyframes wave {
+    30% {
+        opacity: 1;
+        transform: translateY(4px) translateX(0) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-3px) translateX(0) rotate(0);
+        color: var(--primary);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) translateX(5px) rotate(-90deg);
+        color: var(--primary);
+        filter: blur(5px);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(4px) translateX(0) rotate(0);
+        filter: blur(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-3px) translateX(0) rotate(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) translateX(0) rotate(0);
+    }
+}
+
+@keyframes disapear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(5px) translateY(20px);
+        color: var(--primary);
+        filter: blur(5px);
+    }
+}
+
+/* Plane */
+.state--default .icon svg {
+    animation: land 0.6s ease forwards;
+}
+
+.btn-buscar:hover .state--default .icon {
+    transform: rotate(45deg) scale(1.25);
+}
+
+.btn-buscar:focus .state--default svg {
+    animation: takeOff 0.8s linear forwards;
+}
+
+.btn-buscar:focus .state--default .icon {
+    transform: rotate(0) scale(1.25);
+}
+
+@keyframes takeOff {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(70px) rotate(45deg) scale(2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(160px) rotate(45deg) scale(0);
+    }
+}
+
+@keyframes land {
+    0% {
+        transform: translateX(-60px) translateY(30px) rotate(-50deg) scale(2);
+        opacity: 0;
+        filter: blur(3px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0) rotate(0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+/* Contrail */
+.state--default .icon:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 0;
+    left: -5px;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
+}
+
+.btn-buscar:focus .state--default .icon:before {
+    animation: contrail 0.8s linear forwards;
+}
+
+@keyframes contrail {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    8% {
+        width: 15px;
+    }
+
+    60% {
+        opacity: 0.7;
+        width: 80px;
+    }
+
+    100% {
+        opacity: 0;
+        width: 160px;
+    }
+}
+
+/* States */
+.state {
+    padding-left: 29px;
+    z-index: 2;
+    display: flex;
+    position: relative;
+}
+
+.state--default span:nth-child(4) {
+    margin-right: 5px;
+}
+
+.state--sent {
+    display: none;
+}
+
+.state--sent svg {
+    transform: scale(1.25);
+    margin-right: 8px;
+}
+
+.btn-buscar:focus .state--default {
+    position: absolute;
+}
+
+.btn-buscar:focus .state--sent {
+    display: flex;
+}
+
+.btn-buscar:focus .state--sent span {
+    opacity: 0;
+    animation: slideDown 0.8s ease forwards calc(var(--i) * 0.2s);
+}
+
+.btn-buscar:focus .state--sent .icon svg {
+    opacity: 0;
+    animation: appear 1.2s ease forwards 0.8s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(4) rotate(-40deg);
+        color: var(--primary);
+        filter: blur(4px);
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(0.6);
+        filter: blur(1px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Línea del tick */
+@keyframes draw-one {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-two {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*Css de la tarjeta*/
+/*div donde esta conenida la tarjeta de credito*/
+.flip-card {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    background-color: transparent;
+    width: 240px;
+    height: 154px;
+    perspective: 1000px;
+    color: white;
+}
+
+.heading_8264 {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+}
+
+.logoo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+}
+
+.chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+}
+
+.contactless {
+    /*Es la señal de wifi*/
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+}
+
+.number {
+    position: absolute;
+    font-weight: bold;
+    font-size: .6em;
+    top: 8.3em;
+    left: 1.6em;
+}
+
+.valid_thru {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: .01em;
+    left: 140.3em;
+}
+
+.date_8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 13.6em;
+    left: 3.2em;
+}
+
+.name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+}
+
+.strip {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 15em;
+    height: 1.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(45deg,
+            #303030,
+            #303030 10px,
+            #202020 10px,
+            #202020 20px);
+}
+
+.mstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: .8em;
+    border-radius: 2.5px;
+}
+
+.sstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 1.5em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+}
+
+.code {
+    /* *** */
+    font-weight: bold;
+    text-align: center;
+    margin: .2em;
+    color: black;
+}
+
+/*aspecto de la tarjeta*/
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    box-shadow: rgba(255, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+}
+
+.flip-card-back {
+    box-shadow: rgb(248, 162, 1) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+    transform: rotateY(180deg);
+}
+
+/*Formulario para pagar*/
+.forms-pago {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*Boton pagar*/
+.cssbuttons-io-button {
+    background-image: linear-gradient(19deg, #0e8ec0 2%, #5dc3eb 100%);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 0 auto;
+    padding: 20px;
+    height: 68px;
+    font-family: "Galano Grotesque", Poppins, Montserrat, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 1.6em rgb(0, 119, 255), 0 0 1.6em hsl(0, 0%, 97%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 10em;
+    right: 0.3em;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #000000;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.9);
+}
+
+
+.texto-compra {
+    text-align: center;
+    color: #797676;
+    font-size: 1rem;
+}
+
+/*Contenedor de estadisticas*/
+.estadistica-contenedor {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.numero-estadistica {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #005eff;
+    margin-bottom: 0.5rem;
+}
+
+.texto-estadistica {
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+/*Estan todas las flashcard*/
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem; /* Aumenta el espacio entre tarjetas */
+    padding: 1rem; /* Añade espacio interno */
+}
+
+.flashcard {
+    position: relative;
+    width: 100%; /* Muy importante para que se ajuste al grid */
+    max-width: 100%; 
+    height: 200px;
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 4px #97c4f8;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/*el -y es el scroll*/
+.flashcard__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow-y: auto
+}
+
+.flashcard:hover .flashcard__content {
+    transform: rotateX(0deg);
+}
+
+.flashcard__title {
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.flashcard:hover svg {
+    scale: 0;
+}
+
+.flashcard__description {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #525151;
+    line-height: 1.4;
+}
+
+/*btn de ver mas hoteles*/
+.flashcard__link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #86baf5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.flashcard__link:hover {
+    background-color: #5a9bd8;
+    transform: scale(1.05);
+}
+
+/*Todas las areolinias*/
+.airlines-section {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.airlines-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
+.airlines-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.airline-logo {
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #4a5568;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+    list-style: none;
+}
+
+.airline-logo:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+.text-airline {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forms-busqueda {
+        grid-template-columns: 1fr;
+    }
+
+    .contenido-principal {
+        padding-top: 150px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    header {
+        padding: 20px 20px;
+    }
+
+    header .logo {
+        font-size: 30px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inicio,
+    .destinos,
+    .viajes,
+    .hoteles {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .airlines-grid {
+        gap: 1rem;
+    }
+}
