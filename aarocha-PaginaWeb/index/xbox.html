@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consolas Xbox</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">← Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Consolas Xbox</h1>
+        <div class="consolas-grid">
+            <div class="consola-card">
+    <img src="/images/xbox360.jpg" alt="Xbox 360">
+    <h3>Xbox 360</h3>
+    <button onclick="mostrarControles('x360')">Ver controles</button>
+    <div id="controles-x360" class="controles oculto">
+        <div class="control">
+            <img src="/images/control-xbox360-blanco.jpg" alt="Control Xbox 360 Blanco">
+            <p>Control Xbox 360 Blanco - $35</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-xbox360-inalambrico.jpg" alt="Control Xbox 360 Inalámbrico">
+            <p>Control Xbox 360 Inalámbrico - $40</p>
+        </div>
+    </div>
+</div>
+<div class="consola-card">
+    <img src="/images/xboxone.png" alt="Xbox One">
+    <h3>Xbox One</h3>
+    <button onclick="mostrarControles('xone')">Ver controles</button>
+    <div id="controles-xone" class="controles oculto">
+        <div class="control">
+            <img src="/images/control-xboxone-negro.jpg" alt="Control Xbox One Negro">
+            <p>Control Xbox One Negro - $45</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-xboxone-especial.jpg" alt="Control Xbox One Edición Especial">
+            <p>Control Xbox One Edición Especial - $55</p>
+        </div>
+    </div>
+</div>
+<div class="consola-card">
+    <img src="/images/xboxseriesx.jpg" alt="Xbox Series X">
+    <h3>Xbox Series X</h3>
+    <button onclick="mostrarControles('xseries')">Ver controles</button>
+    <div id="controles-xseries" class="controles oculto">
+        <div class="control">
+            <img src="/images/control-seriesx.jpg" alt="Control Xbox Series X Negro">
+            <p>Control Series X - $60</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-seriesx-white.jpg" alt="Control Xbox Series X Robot White">
+            <p>Control Series X Robot White - $65</p>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <script>
+        function mostrarControles(id) {
+            const seccion = document.getElementById("controles-" + id);
+            seccion.classList.toggle("oculto");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consolas PlayStation</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">← Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Consolas PlayStation</h1>
+        <div class="consolas-grid">
+            <div class="consola-card">
+    <img src="/images/ps3.jpg" alt="PlayStation 3">
+    <h3>PlayStation 3</h3>
+    <button onclick="mostrarControles('ps3')">Ver controles</button>
+    <div id="controles-ps3" class="controles oculto">
+        <div class="control">
+            <img src="/images/control-ps3-dualshock.jpg" alt="Control PS3 DualShock 3">
+            <p>Control PS3 DualShock 3 - $30</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-ps3-inalambrico.jpg" alt="Control PS3 Inalámbrico">
+            <p>Control PS3 Inalámbrico Negro - $35</p>
+        </div>
+    </div>
+</div>
+<div class="consola-card">
+    <img src="/images/ps4.jpg" alt="PlayStation 4">
+    <h3>PlayStation 4</h3>
+    <button onclick="mostrarControles('ps4')">Ver controles</button>
+    <div id="controles-ps4" class="controles oculto">
+        <div class="control">
+            <img src="/images/control-ps4-dualshock.jpg" alt="Control PS4 DualShock 4">
+            <p>Control PS4 DualShock 4 - $45</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-ps4-camuflaje.jpg" alt="Control PS4 Camuflaje">
+            <p>Control PS4 Camuflaje - $50</p>
+        </div>
+    </div>
+</div>
+<div class="consola-card">
+    <img src="/images/ps5.jpg" alt="PlayStation 5">
+    <h3>PlayStation 5</h3>
+    <button onclick="mostrarControles('ps5')">Ver controles</button>
+    <div id="controles-ps5" class="controles oculto">
+        <div class="control">
+            <img src="/images/control-ps5-dualsense.jpg" alt="Control PS5 DualSense">
+            <p>Control PS5 DualSense - $60</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-ps5-galaxy.jpg" alt="Control PS5 Cosmic Red">
+            <p>Control PS5 Cosmic Red - $65</p>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <script>
+        function mostrarControles(id) {
+            const seccion = document.getElementById("controles-" + id);
+            seccion.classList.toggle("oculto");
+        }
+    </script>
+</body>
+</html>

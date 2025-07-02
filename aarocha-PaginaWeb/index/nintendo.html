@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consolas Nintendo</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">← Volver</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Consolas Nintendo Switch</h1>
+        <div class="consolas-grid">
+            <div class="consola-card">
+    <img src="/images/switch.jpg" alt="Nintendo Switch">
+    <h3>Nintendo Switch</h3>
+    <button onclick="mostrarControles('switch')">Ver controles</button>
+    <div id="controles-switch" class="controles oculto">
+        <div class="control">
+            <img src="/images/joycon-azulrojo.jpg" alt="Joy-Con Azul y Rojo">
+            <p>Joy-Con Azul/Rojo - $70</p>
+        </div>
+        <div class="control">
+            <img src="/images/joycon-gris.jpg" alt="Joy-Con Gris">
+            <p>Joy-Con Gris - $70</p>
+        </div>
+    </div>
+</div>
+<div class="consola-card">
+    <img src="/images/switchlite.jpg" alt="Nintendo Switch Lite">
+    <h3>Switch Lite</h3>
+    <button onclick="mostrarControles('lite')">Ver controles</button>
+    <div id="controles-lite" class="controles oculto">
+        <div class="control">
+            <img src="/images/control-lite-horipad.jpg" alt="Hori Pad Mini">
+            <p>Hori Pad Mini - $45</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-lite-pro.jpg" alt="Control Pro Lite">
+            <p>Control Pro Lite - $50</p>
+        </div>
+    </div>
+</div>
+<div class="consola-card">
+    <img src="/images/switcholed.jpg" alt="Nintendo Switch OLED">
+    <h3>Switch OLED</h3>
+    <button onclick="mostrarControles('oled')">Ver controles</button>
+    <div id="controles-oled" class="controles oculto">
+        <div class="control">
+            <img src="/images/joycon-blanco.jpg" alt="Joy-Con Blanco">
+            <p>Joy-Con Blanco - $75</p>
+        </div>
+        <div class="control">
+            <img src="/images/control-oled-zelda.jpg" alt="Control Pro Zelda">
+            <p>Control Pro Edición Zelda - $80</p>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    <script>
+        function mostrarControles(id) {
+            const seccion = document.getElementById("controles-" + id);
+            seccion.classList.toggle("oculto");
+        }
+    </script>
+</body>
+</html>
