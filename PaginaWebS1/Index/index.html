@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados Deportes de Combate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Styles/fonts.css">
+  <link rel="stylesheet" href="../Styles/estilo.css">
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Navegación principal">
+      <div class="logo" tabindex="0">RingData</div>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#results" role="menuitem" tabindex="0">Resultados</a></li>
+        <li role="none"><a href="#news" role="menuitem" tabindex="0">Noticias</a></li>
+        <li role="none"><a href="#about" role="menuitem" tabindex="0">Sobre Nosotros</a></li>
+        <li role="none"><a href="ranking.html" role="menuitem" tabindex="0">Ranking</a></li>
+        <li role="none"><a href="foro.html" role="menuitem" tabindex="0">Foro</a></li>
+        <li role="none"><a href="#predictions" role="menuitem" tabindex="0">Predicciones</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" tabindex="-1">
+    <section id="hero" aria-label="Introducción y título del sitio">
+      <h1>Resultados de Deportes de Combate</h1>
+      <p>Ve resultados, noticias, rankings y participa en foros y predicciones de MMA, Boxeo, Muay Thai y más.</p>
+    </section>
+    
+    <section id="results" aria-labelledby="results-title">
+      <h2 id="results-title">Resultados por filtros</h2>
+      <form id="results-filters" aria-label="Filtros para resultados de combate">
+        <label for="filter-gender">Género
+          <select id="filter-gender" name="gender" aria-controls="results-list">
+            <option value="">Todos</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
+        </label>
+        <label for="filter-company">Compañía
+          <select id="filter-company" name="company" aria-controls="results-list">
+            <option value="">Todas</option>
+            <option value="UFC">UFC</option>
+            <option value="Bellator">Bellator</option>
+            <option value="ONE">ONE Championship</option>
+            <option value="Boxeo">Boxeo</option>
+            <option value="Grappling">Grappling</option>
+            <option value="Muay Thai">Muay Thai</option>
+          </select>
+        </label>
+        <label for="filter-weight">Peso
+          <select id="filter-weight" name="weight" aria-controls="results-list">
+            <option value="">Todos</option>
+            <option value="Peso Mosca">Peso Mosca</option>
+            <option value="Peso Pluma">Peso Pluma</option>
+            <option value="Peso Ligero">Peso Ligero</option>
+            <option value="Peso Welter">Peso Welter</option>
+            <option value="Peso Medio">Peso Medio</option>
+            <option value="Peso Semipesado">Peso Semipesado</option>
+            <option value="Peso Pesado">Peso Pesado</option>
+          </select>
+        </label>
+        <label for="filter-country">País
+          <select id="filter-country" name="country" aria-controls="results-list">
+            <option value="">Todos</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Brasil">Brasil</option>
+            <option value="México">México</option>
+            <option value="Japón">Japón</option>
+            <option value="Reino Unido">Reino Unido</option>
+            <option value="Tailandia">Tailandia</option>
+            <option value="Canadá">Canadá</option>
+          </select>
+        </label>
+        <label for="filter-discipline">Disciplina
+          <select id="filter-discipline" name="discipline" aria-controls="results-list">
+            <option value="">Todas</option>
+            <option value="MMA">MMA</option>
+            <option value="Grappling">Grappling</option>
+            <option value="Boxeo">Boxeo</option>
+            <option value="Muay Thai">Muay Thai</option>
+          </select>
+        </label>
+      </form>
+      <div id="results-list" aria-live="polite" aria-label="Listado de resultados">
+      </div>
+    </section>
+
+    <section id="news" aria-labelledby="news-title">
+      <h2 id="news-title">Noticias</h2>
+      <div id="news-list" role="list">
+        <article class="news-item" role="listitem" tabindex="0">
+          <h3>UFC anuncia nueva pelea estelar para diciembre</h3>
+          <time class="news-date" datetime="2024-12-01">1 de diciembre, 2024</time>
+          <p class="news-content">La UFC confirma la pelea entre dos de los mejores pesos pesados para cerrar el año con un gran evento.</p>
+        </article>
+        <article class="news-item" role="listitem" tabindex="0">
+          <h3>Bellator presenta Ranking renovado para 2024</h3>
+          <time class="news-date" datetime="2024-11-15">15 de noviembre, 2024</time>
+          <p class="news-content">Actualización importante en las clasificaciones tras recientes eventos y peleas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre Nosotros</h2>
+      <p>Somos una plataforma dedicada a proveer resultados precisos y noticias actualizadas de deportes de combate. Nuestra pasión es el deporte y queremos conectar a fans con cada pelea, evento y debate.</p>
+    </section>
+
+    <section id="predictions" aria-labelledby="predictions-title">
+      <h2 id="predictions-title">Predicciones</h2>
+      <p>DANOS TU OPINION DE LAS PELEAS MAS DESTACADAS:</p>
+      <div class="prediction-container" id="prediction-1">
+        <div class="fighter-selection left-fighter">
+          <img src="../Images/kamaruUsman.png" alt="Kamaru Usman" class="fighter-image" id="fighter1-img">
+          <span class="fighter-name" id="fighter1-name">Kamaru Usman</span>
+        </div>
+        <div class="prediction-center">
+          <span class="weight-class">Peso Welter</span>
+          <input type="range" min="0" max="100" value="50" step="50" class="prediction-slider" id="slider1" oninput="updatePrediction(1, this.value)">
+          <div class="prediction-bar" id="bar1"><span class="prediction-percentage">50%</span></div>
+        </div>
+        <div class="fighter-selection right-fighter">
+          <img src="../Images/joaquinBucley.png" alt="Joaquin Buckley" class="fighter-image" id="fighter2-img">
+          <span class="fighter-name" id="fighter2-name">Joaquin Buckley</span>
+        </div>
+      </div>
+      <div class="prediction-container" id="prediction-2">
+        <div class="fighter-selection left-fighter">
+          <img src="../Images/iliaTopuria.png" alt="Ilia Topuria" class="fighter-image" id="fighter3-img">
+          <span class="fighter-name" id="fighter3-name">Ilia Topuria</span>
+        </div>
+        <div class="prediction-center">
+          <span class="weight-class">Título Mundial del Peso Ligero</span>
+          <input type="range" min="0" max="100" value="50" step="50" class="prediction-slider" id="slider2" oninput="updatePrediction(2, this.value)">
+          <div class="prediction-bar" id="bar2"><span class="prediction-percentage">50%</span></div>
+        </div>
+        <div class="fighter-selection right-fighter">
+          <img src="../Images/charlesOliveira.png" alt="Charles Oliveira" class="fighter-image" id="fighter4-img">
+          <span class="fighter-name" id="fighter4-name">Charles Oliveira</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 RingData. Todos los derechos reservados.
+  </footer>
+
+  <script src="../Scripts/script.js"></script>
+</html>

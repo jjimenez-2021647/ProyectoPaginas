@@ -1,0 +1,92 @@
+:root {
+  --font-primary: 'Roboto Condensed', sans-serif;
+}
+
+* {
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  user-select: none;
+}
+
+ul.nav-links li {
+  font-weight: 600;
+}
+
+#hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#results-filters label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#results-filters select {
+  font-size: 1rem;
+}
+
+.result-card h3 {
+  font-size: 1.2rem;
+}
+
+.result-info {
+  font-size: 0.9rem;
+}
+
+.news-item h3 {
+  font-size: 1.1rem;
+}
+
+.news-date {
+  font-size: 0.8rem;
+}
+
+.news-content {
+  font-size: 0.95rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+#rankings-list a {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.placeholder-message {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+footer {
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.forum-section { margin: 20px 0; padding: 20px; background: #f9f9f9; border-radius: 5px; }
+.forum-form { margin-bottom: 15px; }
+.forum-form input[type="text"] { width: 70%; padding: 5px; margin-right: 10px; }
+.forum-form button { padding: 5px 10px; }
+.forum-posts { max-height: 300px; overflow-y: auto; }
+.forum-post { margin: 10px 0; padding: 10px; background: #fff; border: 1px solid #ddd; border-radius: 3px; }
